@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acode Test Website</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <h1>Welcome to My Test Website</h1>
-    <p id="message">Click the button to change this text.</p>
-
-    <button onclick="changeText()">Click Me</button>
-
-    <script src="script.js"></script>
+    <h1>Well there's buttons now. Sort of</h1>
+    
+    <div class="calculator">
+      
+      <div class="display">
+        <input id="screen" type="text" disabled />
+        <div class="buttons">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>/</button>
+          
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>*</button>
+          
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>-</button>
+          
+          <button>0</button>
+          <button>C</button>
+          <button>=</button>
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+    
 </body>
 </html>

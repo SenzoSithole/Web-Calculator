@@ -32,7 +32,8 @@ DOM manipulation, and basic application logic.
 ├── index.html 
 ├── styles.css 
 ├── script.js 
-└── README.md``
+└── README.md
+``
 
 ## Live Demo
 

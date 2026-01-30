@@ -28,11 +28,11 @@ DOM manipulation, and basic application logic.
 ---
 
 ## 📂 Project Structure
-Acode-Test-Site/ 
+```Acode-Test-Site/ 
 ├── index.html 
 ├── styles.css 
 ├── script.js 
-└── README.md
+└── README.md```
 
 ## Live Demo
 

@@ -24,7 +24,7 @@ DOM manipulation, and basic application logic.
 - Vanilla JavaScript
 - Git & GitHub
 - Acode + Termux (Android development environment)
-
+- Visual Studio Code
 ---
 
 ## 📂 Project Structure

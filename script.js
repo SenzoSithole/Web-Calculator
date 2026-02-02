@@ -32,6 +32,21 @@ function handleDecimal(value, screenValue) {
   return ".";
 }
 
+function handleDelete() {
+  // If the screen is empty, do nothing
+  if (screen.value === "") return;
+  
+  // If a calculation has just been completed, delete clears everything
+  if (justCalculated) { // Works if justCalculated = true
+    screen.value = ""; // Need to change to erase last text input from last calculated expression
+    justCalculated = false;
+    return;
+  }
+  
+  // If it's not the first two cases it means there's an expression being typed, this erases the last text input in the expression
+  screen.value = screen.value.slice(0,-1);
+}
+
 // 3. Add a click event to each button
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -64,6 +79,11 @@ buttons.forEach((button) => {
         justCalculated = false;
         screen.value = "";
       }
+      // 4.5 Handle the delete button
+      else if (value === "DEL"){
+        handleDelete();
+      }
+      
       // 5. Handle the equal button
       else if (value === "=") {
         try {
@@ -85,4 +105,4 @@ buttons.forEach((button) => {
 });
 
 
-//Next feature is a delete button
+//Next is fixing the multiple operator entry bug

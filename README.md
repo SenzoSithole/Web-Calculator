@@ -8,8 +8,6 @@ DOM manipulation, and basic application logic.
 
 🔗 https://senzosithole.github.io/Web-Calculator/
 
-
-
 ---
 
 ## 🚀 Features
